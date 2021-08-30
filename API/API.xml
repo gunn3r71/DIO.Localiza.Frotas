@@ -1,8 +1,46 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>API</name>
+        <name>Dio.Localiza.Frotas.API</name>
     </assembly>
     <members>
+        <member name="M:Dio.Localiza.Frotas.API.Controllers.VeiculosController.GetById(System.Guid)">
+            <summary>
+            Obtem veículo através do Id
+            </summary>
+            <param name="id">Id do veículo desejado</param>
+            <returns>200 - Veículo encontrado</returns>
+            <returns>404 - Veículo não encontrado</returns>
+        </member>
+        <member name="M:Dio.Localiza.Frotas.API.Controllers.VeiculosController.GetAll">
+            <summary>
+            Traz todos veículos cadastrados
+            </summary>
+            <returns>Lista de veículos</returns>
+        </member>
+        <member name="M:Dio.Localiza.Frotas.API.Controllers.VeiculosController.Post(Dio.Localiza.Frotas.Domain.Entities.Veiculo)">
+            <summary>
+            Insere um veículo na frota
+            </summary>
+            <param name="veiculo">Veiculo a ser inserido</param>
+            <returns>201 - veículo criado com sucesso</returns>
+        </member>
+        <member name="M:Dio.Localiza.Frotas.API.Controllers.VeiculosController.Put(System.Guid,Dio.Localiza.Frotas.Domain.Entities.Veiculo)">
+            <summary>
+            Atualiza um veículo na frota
+            </summary>
+            <param name="id">Id do veículo a ser atualizado</param>
+            <param name="veiculo">Veículo a ser atualizado</param>
+            <returns>204 - veículo atualizado com sucesso</returns>
+            <returns>404 - Veículo não foi encontrado</returns>
+        </member>
+        <member name="M:Dio.Localiza.Frotas.API.Controllers.VeiculosController.Delete(System.Guid)">
+            <summary>
+            Deleta um veículo na frota
+            </summary>
+            <param name="id">Id do veículo a ser deletado</param>
+            <returns>204 - veículo deletado com sucesso</returns>
+            <returns>404 - veículo não foi encontrado</returns>
+        </member>
     </members>
 </doc>
