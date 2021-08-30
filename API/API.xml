@@ -4,6 +4,30 @@
         <name>Dio.Localiza.Frotas.API</name>
     </assembly>
     <members>
+        <member name="T:Dio.Localiza.Frotas.API.Configuration.DependecyInjectionConfiguration">
+            <summary>
+            Resolve dependencias do projeto
+            </summary>
+        </member>
+        <member name="M:Dio.Localiza.Frotas.API.Configuration.DependecyInjectionConfiguration.ResolveDependencies(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Resolve dependencias do projeto
+            </summary>
+            <param name="services">Extensão de service</param>
+            <returns>service</returns>
+        </member>
+        <member name="T:Dio.Localiza.Frotas.API.Configuration.SwaggerConfiguration">
+            <summary>
+            Configuração do swagger
+            </summary>
+        </member>
+        <member name="M:Dio.Localiza.Frotas.API.Configuration.SwaggerConfiguration.AddSwaggerConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configuração do swagger
+            </summary>
+            <param name="services">services</param>
+            <returns>services</returns>
+        </member>
         <member name="M:Dio.Localiza.Frotas.API.Controllers.VeiculosController.GetById(System.Guid)">
             <summary>
             Obtem veículo através do Id

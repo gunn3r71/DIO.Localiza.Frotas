@@ -15,15 +15,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configuration\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Dio.Localiza.Frotas.Domain\Dio.Localiza.Frotas.Domain.csproj" />
+    <ProjectReference Include="..\Dio.Localiza.Frotas.Infrastructure\Dio.Localiza.Frotas.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

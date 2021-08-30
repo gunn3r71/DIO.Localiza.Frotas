@@ -31,6 +31,8 @@ namespace Dio.Localiza.Frotas.API
         {
             services.AddControllers();
             services.AddSwaggerConfiguration();
+
+            services.ResolveDependencies();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

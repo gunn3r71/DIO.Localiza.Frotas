@@ -5,8 +5,16 @@ using Microsoft.OpenApi.Models;
 
 namespace Dio.Localiza.Frotas.API.Configuration
 {
+    /// <summary>
+    /// Configuração do swagger
+    /// </summary>
     public static class SwaggerConfiguration
     {
+        /// <summary>
+        /// Configuração do swagger
+        /// </summary>
+        /// <param name="services">services</param>
+        /// <returns>services</returns>
         public static IServiceCollection AddSwaggerConfiguration(this IServiceCollection services)
         {
             services.AddSwaggerGen(c =>
