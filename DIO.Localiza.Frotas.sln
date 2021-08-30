@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dio.Localiza.Frotas.Domain", "Dio.Localiza.Frotas.Domain\Dio.Localiza.Frotas.Domain.csproj", "{E067A767-5CAE-4442-8BD0-03AC3BCD8850}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dio.Localiza.Frotas.Infrastructure", "Dio.Localiza.Frotas.Infrastructure\Dio.Localiza.Frotas.Infrastructure.csproj", "{5C4A8E25-A63E-4EC4-B35D-E63B589125D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{3DC68B16-6AA8-4178-A322-ED63C2985C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DC68B16-6AA8-4178-A322-ED63C2985C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DC68B16-6AA8-4178-A322-ED63C2985C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E067A767-5CAE-4442-8BD0-03AC3BCD8850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E067A767-5CAE-4442-8BD0-03AC3BCD8850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E067A767-5CAE-4442-8BD0-03AC3BCD8850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E067A767-5CAE-4442-8BD0-03AC3BCD8850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C4A8E25-A63E-4EC4-B35D-E63B589125D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C4A8E25-A63E-4EC4-B35D-E63B589125D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C4A8E25-A63E-4EC4-B35D-E63B589125D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C4A8E25-A63E-4EC4-B35D-E63B589125D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
