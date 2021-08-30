@@ -3,7 +3,7 @@ using System.IO;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
-namespace API.Configuration
+namespace Dio.Localiza.Frotas.API.Configuration
 {
     public static class SwaggerConfiguration
     {

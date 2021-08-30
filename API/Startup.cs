@@ -1,11 +1,11 @@
-using API.Configuration;
+using Dio.Localiza.Frotas.API.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace API
+namespace Dio.Localiza.Frotas.API
 {
     public class Startup
     {
