@@ -1,6 +1,8 @@
 using Dio.Localiza.Frotas.API.Configuration;
+using Dio.Localiza.Frotas.Infrastructure.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -29,6 +31,11 @@ namespace Dio.Localiza.Frotas.API
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseInMemoryDatabase("localizafrotas");
+            });
+
             services.AddControllers();
             services.AddSwaggerConfiguration();
 

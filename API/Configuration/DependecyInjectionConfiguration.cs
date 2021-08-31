@@ -16,7 +16,8 @@ namespace Dio.Localiza.Frotas.API.Configuration
         /// <returns>service</returns>
         public static IServiceCollection ResolveDependencies(this IServiceCollection services)
         {
-            services.AddSingleton<IVeiculoRepository, InMemoryVeiculoRepository>();
+            //services.AddSingleton<IVeiculoRepository, InMemoryVeiculoRepository>();
+            services.AddScoped<IVeiculoRepository, EfVeiculoRepository>();
             return services;
         }
     }
