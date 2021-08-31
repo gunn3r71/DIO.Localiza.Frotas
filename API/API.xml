@@ -66,5 +66,12 @@
             <returns>204 - veículo deletado com sucesso</returns>
             <returns>404 - veículo não foi encontrado</returns>
         </member>
+        <member name="M:Dio.Localiza.Frotas.API.Controllers.VeiculosController.Put(System.Guid)">
+            <summary>
+            Agendar vistoria para um veículo
+            </summary>
+            <param name="id">Id do veículo</param>
+            <returns>204 - Sucesso ao agendar vistoria</returns>
+        </member>
     </members>
 </doc>

@@ -11,10 +11,12 @@ namespace Dio.Localiza.Frotas.API.Controllers
     public class VeiculosController : ControllerBase
     {
         private readonly IVeiculoRepository _veiculoRepository = null;
+        private readonly IVeiculoDetran _detran;
 
-        public VeiculosController(IVeiculoRepository veiculoRepository)
+        public VeiculosController(IVeiculoRepository veiculoRepository, IVeiculoDetran detran)
         {
             _veiculoRepository = veiculoRepository;
+            _detran = detran;
         }
 
         /// <summary>
@@ -88,6 +90,19 @@ namespace Dio.Localiza.Frotas.API.Controllers
             if (veiculo == null) return NotFound(id);
 
             _veiculoRepository.Delete(veiculo);
+
+            return NoContent();
+        }
+
+        /// <summary>
+        /// Agendar vistoria para um veículo
+        /// </summary>
+        /// <param name="id">Id do veículo</param>
+        /// <returns>204 - Sucesso ao agendar vistoria</returns>
+        [HttpPut("{id:guid}/vistoria")]
+        public IActionResult Put(Guid id)
+        {
+            _detran.AgendarVistoria(id);
 
             return NoContent();
         }

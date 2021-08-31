@@ -1,4 +1,5 @@
 using Dio.Localiza.Frotas.API.Configuration;
+using Dio.Localiza.Frotas.Domain.Facade;
 using Dio.Localiza.Frotas.Infrastructure.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -40,6 +41,9 @@ namespace Dio.Localiza.Frotas.API
             services.AddSwaggerConfiguration();
 
             services.ResolveDependencies();
+
+
+            services.Configure<DetranOptions>(Configuration.GetSection("DetranOptions"));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

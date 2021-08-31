@@ -1,4 +1,5 @@
-﻿using Dio.Localiza.Frotas.Domain.Interfaces;
+﻿using Dio.Localiza.Frotas.Domain.Facade;
+using Dio.Localiza.Frotas.Domain.Interfaces;
 using Dio.Localiza.Frotas.Infrastructure.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -18,6 +19,9 @@ namespace Dio.Localiza.Frotas.API.Configuration
         {
             //services.AddSingleton<IVeiculoRepository, InMemoryVeiculoRepository>();
             services.AddScoped<IVeiculoRepository, EfVeiculoRepository>();
+            services.AddScoped<IVeiculoDetran, VeiculoDetranFacade>();
+
+            services.AddHttpClient();
             return services;
         }
     }
